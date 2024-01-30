@@ -3,7 +3,7 @@
 /**
  * binary_tree_delete - Deletes an entire binary tree.
  * @tree: pointer to the root of the tree
- * 
+ *
  * Description: This function deletes all nodes in the binary tree
  * starting from the leaves and moving towards the root
 */
