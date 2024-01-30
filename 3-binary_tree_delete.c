@@ -2,10 +2,10 @@
 
 /**
  * binary_tree_delete - Deletes an entire binary tree.
- * @tree: pointer to the root of the tree
+ * @tree: pointer to the root of the tree.
  *
- * Description: This function deletes all nodes in the binary tree
- * starting from the leaves and moving towards the root
+ * Description: This function deletes all nodes in the binary tree.
+ * starting from the leaves and moving towards the root.
 */
 
 void binary_tree_delete(binary_tree_t *tree)
