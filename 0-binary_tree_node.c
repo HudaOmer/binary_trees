@@ -1,10 +1,12 @@
-// function that create binary treee node
-// parent is a pointer to the parent node of the node to create
-// value is the value to put in the new node
-// When created, a node does not have any child
-// function must return a pointer to the new node, or NULL on failure
-
 #include "binary_trees.h"
+
+/**
+ * binary_tree_node - Creates a new node for a binary tree.
+ * @parent: Pointer to the parent node.
+ * @value: Integer value to be stored in the new node.
+ *
+ * Return: Pointer to the newly created node on success, or NULL on failure.
+ */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
