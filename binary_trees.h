@@ -17,6 +17,14 @@ struct binary_tree_s
     struct binary_tree_s *right;
 };
 
-typedef struct binary_tree_s binary_tree_t
+typedef struct binary_tree_s binary_tree_t;
+
+/* library */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+/* function prototype */
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
 #endif
