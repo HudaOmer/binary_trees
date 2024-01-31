@@ -19,9 +19,9 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		return ((binary_tree_t *)first);
 
 	firstp = first->parent, secondp = second->parent;
-	if (first == secondp || !firstp || (!firstp>parent && secondp))
+	if (first == secondp || !firstp || (!(firstp>parent) && secondp))
 		return (binary_trees_ancestor(first, secondp));
-	else if (firstp == second || !secondp || (!secondp>parent && firstp))
+	else if (firstp == second || !secondp || (!(secondp>parent) && firstp))
 		return (binary_trees_ancestor(firstp, second));
 
 	return (binary_trees_ancestor(firstp, secondp));
