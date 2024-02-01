@@ -18,7 +18,7 @@ bst_t *min_root(bst_t *root)
  * @value: is the value to remove in the tree
  * Once located, the node containing a value equals to value must be
  * removed and freed
- * If the node to be deleted has two children, it must be replaced with its first
+ * If the node to be deleted has two children, replace with its first
  * n-order successor (not predecessor)
  *
  * Return: a pointer to the new root node of the tree after removing the
