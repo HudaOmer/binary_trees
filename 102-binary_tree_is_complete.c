@@ -15,7 +15,7 @@ bool isFullTree(binary_tree_t *root)
 	if (!(root->left) && !(root->right))
 		return (true);
 
-	if ((root->left && !(root->right))
+	if ((root->left) && !(root->right))
 		if (isFullTree(root->left))
 			return (true);
 	/* If both left and right are not NULL, and left & right subtrees */
