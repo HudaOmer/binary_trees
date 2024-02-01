@@ -39,10 +39,11 @@ bool (binary_tree_t *root, size_t index,size_t nodes)
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
 	binary_tree_t *root = (binary_tree_t *)tree;
+	size_t index = 0, nodes = countNodes(root);
 
 	if (!root)
 		return (0);
-	if (isComplete(root))
+	if (isComplete(root, index, nodes))
 		return (1);
 	return (0);
 }
