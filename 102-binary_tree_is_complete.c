@@ -22,7 +22,7 @@ bool isFullTree(binary_tree_t *root)
 
 
 	/* We reach here when none of the above if conditions work */
-	return (false);
+	return (true);
 }
 
 /**
