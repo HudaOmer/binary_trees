@@ -25,6 +25,7 @@ typedef struct binary_tree_s heap_t;
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdbool.h>
 
 /* function prototype */
 void binary_tree_print(const binary_tree_t *tree);
