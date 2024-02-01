@@ -31,7 +31,7 @@ heap_t *heap_insert(heap_t **root, int value)
 		return (NULL);
 	if (!(*root))
 		return (*root = binary_tree_node(NULL, value));
-  
+
 	tree = *root;
 	size = binary_tree_size(tree);
 	leaves = size;
