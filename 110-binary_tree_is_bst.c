@@ -10,7 +10,7 @@
  */
 bool validBST(const binary_tree_t *tree, int low, int high)
 {
-	if (tree )
+	if (tree)
 	{
 		if (tree->n < low || tree->n > high)
 			return (false);
@@ -24,7 +24,7 @@ bool validBST(const binary_tree_t *tree, int low, int high)
  * binary_tree_is_bst - check if a tree is a BST
  * @tree: a pointer to the root of the tree
  * Return: 1 if tree is a valid BST, and 0 otherwise
- * 	If tree is NULL, return 0 
+ * If tree is NULL, return 0
  */
 int binary_tree_is_bst(const binary_tree_t *tree)
 {
