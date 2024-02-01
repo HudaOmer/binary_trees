@@ -20,7 +20,7 @@ size_t height(const binary_tree_t *tree)
 }
 
 /**
- * bal_avl - a function to check if each subtree if its AVL
+ * bal_AVL - a function to check if each subtree if its AVL
  * @tree: is a node that point to the tree to check
  * @high: is a node that point to the higher node
  * @lower: is a node that point to the lower node
