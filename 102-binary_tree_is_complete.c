@@ -7,25 +7,19 @@
  */
 bool isFullTree(binary_tree_t *root)
 {
-	/* If empty tree */
-	if (!root)
-		return (true);
-
 	/* If leaf node */
 	if (!(root->left) && !(root->right))
 		return (true);
 
-	if ((root->left) && !(root->right))
-	{
-		if (root->left->left && !(root->left->right))
-			return (true);
-		if (root->left->left)
-			return (isFullTree(root->left->left));
-	}
-	/* If both left and right are not NULL, and left & right subtrees */
-	/* are full */
+	if (!(root->left) && (root->right))
+		return (false);
+
+	if (root->left && !(root->right))
+		return (isFullTrer(root->left));
+
 	if ((root->left) && (root->right))
 		return ((isFullTree(root->left) && isFullTree(root->right)));
+
 
 	/* We reach here when none of the above if conditions work */
 	return (false);
