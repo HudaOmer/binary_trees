@@ -2,33 +2,37 @@
 #include <stdbool.h>
 
 /**
- *
+ * countNodes - count the number of nodes
+ * @root: a pointer to the root of the tree
+ * Return: number of nodes
  */
 size_t countNodes(binary_tree_t *root)
 {
-    if (!root)
-        return (0);
+	if (!root)
+		return (0);
 
-    return (1 + countNodes(root->left) + countNodes(root->right));
+	return (1 + countNodes(root->left) + countNodes(root->right));
 }
 
 /**
- * isComplete - this function checks if a tree is full
+ * isComplete - this function checks if a tree is complete
  * @root: is a pointer root of the tree
+ * @index: index of the current node
+ * @nodes: total number of nodes
  * Return: true if complete, false if not
  */
-bool isComplete(binary_tree_t *root, size_t index,size_t nodes)
+bool isComplete(binary_tree_t *root, size_t index, size_t nodes)
 {
-    if (!root)
-        return (true);
- 
-    if (index >= nodes)
-        return (false);
- 
-    return (isComplete(root->left, 2*index + 1, nodes) &&
-            isComplete(root->right, 2*index + 2, nodes));
+	if (!root)
+		return (true);
+
+	if (index >= nodes)
+		return (false);
+
+	return (isComplete(root->left, 2 * index + 1, nodes) &&
+		isComplete(root->right, 2 * index + 2, nodes));
 }
- 
+
 /**
  * binary_tree_is_complete - a function that checks if
  * a binary tree is complete
