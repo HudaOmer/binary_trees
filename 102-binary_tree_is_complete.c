@@ -17,7 +17,7 @@ size_t countNodes(binary_tree_t *root)
  * @root: is a pointer root of the tree
  * Return: true if complete, false if not
  */
-bool (binary_tree_t *root, size_t index,size_t nodes)
+bool isComplete(binary_tree_t *root, size_t index,size_t nodes)
 {
     if (!root)
         return (true);
