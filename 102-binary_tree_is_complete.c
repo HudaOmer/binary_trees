@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <stdbool.h>
 
 /**
  * countNodes - count the number of nodes
