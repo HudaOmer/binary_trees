@@ -1,11 +1,11 @@
 #include "binary_trees.h"
-
+#include <stdbool.h>
 /**
  * isFullTree - this function checks if a tree is full
  * @root: is a pointer root of the tree
  * Return: true if full, false in not
  */
-bool isFullTree (struct Node* root)
+bool isFullTree (binary_tree_t *root)
 {
 	/* If empty tree */
 	if (!root)
